@@ -6,15 +6,15 @@ import logging
 
 
 def log_message(message):
-    """Logs a message to both the console and the log file."""
+    "logs console and file"
     logging.info(message)
     print(message)
 
 
 def files_differ(source_item, replica_item):
     """
-    Determines if two files differ by comparing their size and modification time.
-    Returns True if they differ, otherwise False.
+    compare size and update time 
+    returns true if diferent else false.
     """
     return (
         os.path.getsize(source_item) != os.path.getsize(replica_item)
@@ -24,7 +24,7 @@ def files_differ(source_item, replica_item):
 
 def sync_folders(source, replica):
     """
-    Synchronizes the replica folder with the source folder:
+    Sync the replica folder with the source folder:
     - Copies new/updated files from source to replica.
     - Removes files/folders in replica that are not in source.
     """
@@ -65,10 +65,7 @@ def sync_folders(source, replica):
 
 
 def main(source, replica, log_file, interval):
-    """
-    Main function to perform periodic synchronization.
-    """
-    # Set up logging
+    "main sync function"
     logging.basicConfig(
         filename=log_file,
         level=logging.INFO,
