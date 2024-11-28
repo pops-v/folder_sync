@@ -1,5 +1,6 @@
-# folder_sync
+# folder_sync 
 
+usage: 
 python script_name.py "path to source folder" "path to replica folder" "path to log file" synchronization_interval
 
 
