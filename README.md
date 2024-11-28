@@ -1,10 +1,11 @@
 # folder_sync 
 
-usage: 
+Usage:
+
 python script_name.py "path to source folder" "path to replica folder" "path to log file" synchronization_interval
 
 
-usage example: 
+Usage example: 
 python folder_sync.py "C:\Users\pops\Desktop\folder_sync\source" "C:\Users\pops\Desktop\folder_sync\replica" "C:\Users\pops\Desktop\folder_sync\logs"  5
 
 
